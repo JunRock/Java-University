@@ -1,0 +1,24 @@
+import java.util.*;
+public class Java3 {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.print(">>");
+			String str=sc.nextLine();
+			StringBuffer sb=new StringBuffer(str);
+				while(true) {
+					System.out.print("명령: ");
+					String s = sc.nextLine(); // 한 라인을 문자열로 읽는다.
+					if(s.equals("그만")) {
+						System.out.print("종료합니다");
+						break;
+					}
+					StringTokenizer st=new StringTokenizer(str," ");
+					String [] tokens = s.split("!");
+					if(s.equals("reverse")) {
+						
+					}
+					
+			}
+		}
+	}
+

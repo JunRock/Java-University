@@ -1,0 +1,17 @@
+package 연습;
+
+class Acc{
+	public static void main(String[] args)
+	{
+		String str1="abcdefg";
+		String str2="qwer";
+		String str3=str1.concat(str2);
+		System.out.println(str3);
+		String st4=str1.substring(2);
+		System.out.println(st4);
+		
+		equals// 동일 문자열 비교	
+		compareTo// 사전편차순서 먼저 오는 거 비교
+		compareToIgnoreCase//대소문자 구분안하고 비교
+	}
+}

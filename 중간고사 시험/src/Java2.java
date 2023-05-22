@@ -1,0 +1,18 @@
+public class Java2 {
+		public static void main(String[] args) {
+			int i;
+			int x,y;
+			for(i=1;i<=99;i++)
+			{
+				x=i/10;
+				y=i%10;
+				if((x==3||x==6||x==9)||(y==3||y==6||y==9))
+					{
+							if((x==3||x==6||x==9)&&(y==3||y==6||y==9))
+							System.out.println(i+" 박수짝짝");
+							else
+								System.out.println(i+" 박수짝");
+					}
+			}
+		}
+}

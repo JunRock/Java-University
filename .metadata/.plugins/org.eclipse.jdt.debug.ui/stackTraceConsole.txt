@@ -1,0 +1,43 @@
+package 연습;
+
+class Car{
+	int gal;
+	public Car(int gal)
+	{
+		this.gal=gal;
+	}
+}
+
+class Bcar extends Car{
+	int ele;
+	public Bcar(int gal,int ele)
+	{
+		super(gal);
+		this.ele=ele;
+		
+	}
+}
+
+class Hycar extends Bcar{
+	int wat;
+	public Hycar(int gal,int ele,int wat)
+	{
+		super(gal,ele);
+		this.wat=wat;
+	}
+	
+	public void show()
+	{
+		System.out.println("잔여 가솔린:"+gal);
+		System.out.println("잔여 전기량:"+ele);
+		System.out.println("잔여 워터량:"+wat);
+	}
+}
+
+class Hcar{
+	public static void main(String[] args)
+	{
+		Hycar cc=new Hycar(12,34,56);
+		cc.show();
+	}
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Eight8 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("정수 몇개?");
+		int n=sc.nextInt();
+		int[] num=new int[n];
+		int a=0;
+		for(int i=0;i<n;i++)
+		{
+			int k=(int)(Math.random()*100+1);
+			if(num[i]==k)
+			{	
+				i--;
+		
+			}
+			num[i]=k;
+				
+		}
+		
+		for(int i=0;i<(n/10)+1;i++)
+		{
+			for(int j=0;j<10;j++)
+				{
+					System.out.print(num[a]+" ");
+					a++;
+				}
+			System.out.println();
+		}
+		sc.close();
+	}
+}

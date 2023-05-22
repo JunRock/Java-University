@@ -1,0 +1,33 @@
+package 연습;
+
+class Acc{
+	public static void main(String args[])
+	{
+		int arr[]= {1,45,6,32,56,3,6};
+		System.out.println(min(arr));
+		System.out.println(max(arr));
+		
+	}
+	
+	public static int min(int[] arr)
+	{
+		int min=arr[0];
+		for(int i=1;i<arr.length;i++)
+			{
+				if(min<arr[i]);
+				min=arr[i];
+			}
+		return min;
+	}
+	
+	public static int max(int[] arr)
+	{
+		int max=arr[0];
+		for(int e:arr)
+		{
+			if(max<e)
+				max=e;
+		}
+		return max;
+	}
+}
